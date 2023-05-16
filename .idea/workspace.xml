@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0196d7b1-dfc9-416d-b4e8-5c81ea62e1f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streamy/PowerPointTests.java" afterDir="false" />
+    <list default="true" id="0196d7b1-dfc9-416d-b4e8-5c81ea62e1f4" name="Changes" comment="Streamy ze szkoleń">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/streamy/PowerPointTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/streamy/PowerPointTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +22,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f23bdec6-3879-4581-a9fc-b054601ab4ef" />
+        <option name="url" value="https://github.com/AgataSza/StreamSzkolenia.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,9 +56,92 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.PowerPointTests.optional">
+    <configuration name="PowerPointTests.compare" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="StreamSzkolenia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="streamy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="streamy" />
+      <option name="MAIN_CLASS_NAME" value="streamy.PowerPointTests" />
+      <option name="METHOD_NAME" value="compare" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowerPointTests.compare1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="StreamSzkolenia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="streamy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="streamy" />
+      <option name="MAIN_CLASS_NAME" value="streamy.PowerPointTests" />
+      <option name="METHOD_NAME" value="compare1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowerPointTests.match" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="StreamSzkolenia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="streamy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="streamy" />
+      <option name="MAIN_CLASS_NAME" value="streamy.PowerPointTests" />
+      <option name="METHOD_NAME" value="match" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowerPointTests.optional" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="StreamSzkolenia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="streamy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="streamy" />
+      <option name="MAIN_CLASS_NAME" value="streamy.PowerPointTests" />
+      <option name="METHOD_NAME" value="optional" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.PowerPointTests.optional" />
+        <item itemvalue="TestNG.PowerPointTests.match" />
+        <item itemvalue="TestNG.PowerPointTests.compare1" />
+        <item itemvalue="TestNG.PowerPointTests.compare" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +151,18 @@
       <option name="presentableId" value="Default" />
       <updated>1684158758180</updated>
     </task>
+    <task id="LOCAL-00001" summary="Streamy ze szkoleń">
+      <created>1684159503598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684159503598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Streamy ze szkoleń" />
+    <option name="LAST_COMMIT_MESSAGE" value="Streamy ze szkoleń" />
   </component>
 </project>

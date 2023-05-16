@@ -159,22 +159,48 @@ public class PowerPointTests {
     public void compare() {
         List<CustomModel> modelA = Arrays.asList(
                 new CustomModel("name1", Arrays.asList("value1", "value2"), 1),
-                new CustomModel("name2", Arrays.asList("value3", "value4"), 2)//,
-//                new CustomModel("nameA1", Arrays.asList("valueA1", "valueA2"), 10),
-//                new CustomModel("nameA2", Arrays.asList("valueA3", "valueA4"), 20)
+                new CustomModel("name2", Arrays.asList("value3", "value4"), 2),
+                new CustomModel("nameA1", Arrays.asList("valueA1", "valueA2"), 10),
+                new CustomModel("nameA2", Arrays.asList("valueA3", "valueA4"), 20)
         );
 
         List<CustomModel> modelB = Arrays.asList(
                 new CustomModel("name1", Arrays.asList("value1", "value2"), 1),
-                new CustomModel("name2", Arrays.asList("value3", "value4"), 2)//,
-//                new CustomModel("nameB1", Arrays.asList("valueB1", "valueB2"), 11)
+                new CustomModel("name2", Arrays.asList("value3", "value4"), 2),
+                new CustomModel("nameB1", Arrays.asList("valueB1", "valueB2"), 11)
+        );
+
+  //      List<CustomModel> commons = modelA.stream().filter(modelB::contains).collect(Collectors.toList());
+//        Assert.assertEquals(commons.size() + modelB.size(), commons.size() + modelA.size());
+
+        List<CustomModel> differences1 = modelA.stream().filter(element -> !modelB.contains(element)).collect(Collectors.toList());
+        List<CustomModel> differences2 = modelB.stream().filter(element -> !modelA.contains(element)).collect(Collectors.toList());
+        System.out.println(differences1.size());
+        System.out.println(differences2.size());
+        Assert.assertTrue(differences1.size() == differences2.size() && differences1.size() == 0);
+    }
+
+    @Test
+    public void compare1() {
+        List<CustomModel> modelA = Arrays.asList(
+                new CustomModel("name1", Arrays.asList("value1", "value2"), 1),
+                new CustomModel("name2", Arrays.asList("value3", "value4"), 2),
+                new CustomModel("nameA1", Arrays.asList("valueA1", "valueA2"), 10),
+                new CustomModel("nameA2", Arrays.asList("valueA3", "valueA4"), 20)
+        );
+
+        List<CustomModel> modelB = Arrays.asList(
+                new CustomModel("name1", Arrays.asList("value1", "value2"), 1),
+                new CustomModel("name2", Arrays.asList("value3", "value4"), 2),
+                new CustomModel("nameB1", Arrays.asList("valueB1", "valueB2"), 11)
         );
 
         List<CustomModel> commons = modelA.stream().filter(modelB::contains).collect(Collectors.toList());
         Assert.assertEquals(commons.size() + modelB.size(), commons.size() + modelA.size());
 
-        List<CustomModel> differences1 = modelA.stream().filter(element -> !modelB.contains(element)).collect(Collectors.toList());
-        List<CustomModel> differences2 = modelB.stream().filter(element -> !modelA.contains(element)).collect(Collectors.toList());
-        Assert.assertTrue(differences1.size() == differences2.size() && differences1.size() == 0);
+//        List<CustomModel> differences1 = modelA.stream().filter(element -> !modelB.contains(element)).collect(Collectors.toList());
+//        List<CustomModel> differences2 = modelB.stream().filter(element -> !modelA.contains(element)).collect(Collectors.toList());
+//        Assert.assertTrue(differences1.size() == differences2.size() && differences1.size() == 0);
     }
 }
+
